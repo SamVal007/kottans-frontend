@@ -19,5 +19,5 @@ For tasks of Kottans Front-End course
 
 ## Git Collaboration
 
-![3.1 Screenshot] (https://github.com/SamVal007/kottans-frontend/blob/main/task_git_collaboration/git_collaboration.png)
+![3.1 Screenshot] (https://github.com/SamVal007/kottans-frontend/blob/main/task_git_collaboration/git_collaboration.png?raw=true)
 
