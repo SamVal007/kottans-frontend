@@ -16,3 +16,8 @@ For tasks of Kottans Front-End course
 ## Linux CLI, HTTP
 
 ![2.1 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/Linux/Linux.png)
+
+## Git Collaboration
+
+![3.1 Screenshot] (https://github.com/SamVal007/kottans-frontend/blob/main/task_git_collaboration/git_collaboration.png)
+
