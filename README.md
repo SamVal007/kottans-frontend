@@ -20,3 +20,17 @@ For tasks of Kottans Front-End course
 ## Git Collaboration
 
 ![3.1 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_git_collaboration/git_collaboration.png)
+
+## Intro to HTML and CSS
+
+### 1. Intro to HTML & CSS
+
+![4.1 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/html_css/HTML___Intro.jpg)
+
+### 2. Learn HTML
+
+![4.2 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/html_css/Learn__CSS.jpg)
+
+### 3. Learn CSS
+
+![4.3 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/html_css/Learn__HTML.jpg)
