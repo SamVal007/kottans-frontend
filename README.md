@@ -38,3 +38,14 @@ I've refreshed my knowledge about HTML/CSS. This is a good course
 ### 3. Learn CSS
 
 ![4.3 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/html_css/Learn__HTML.jpg)
+
+
+## Responsive Web Design
+
+### 1. Responsive Web Design Fundamentals
+
+![5.1 Screenshot](https://github.com/7SergSmith7/kottans-frontend/blob/main/task_responsive_web_design/udacity%20responsive%20web.png)
+
+### 2. Flexbox Froggy
+
+![5.2 Screenshot](https://github.com/7SergSmith7/kottans-frontend/blob/main/task_responsive_web_design/flexbox%20froggy.png)
