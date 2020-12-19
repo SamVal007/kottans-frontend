@@ -44,8 +44,8 @@ I've refreshed my knowledge about HTML/CSS. This is a good course
 
 ### 1. Responsive Web Design Fundamentals
 
-![5.1 Screenshot](https://github.com/7SergSmith7/kottans-frontend/blob/main/task_responsive_web_design/udacity%20responsive%20web.png)
+![5.1 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_responsive_web_design/responsive_web_design%20.jpg)
 
 ### 2. Flexbox Froggy
 
-![5.2 Screenshot](https://github.com/7SergSmith7/kottans-frontend/blob/main/task_responsive_web_design/flexbox%20froggy.png)
+![5.2 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_responsive_web_design/Flexbox%20Froggy.jpg)
