@@ -10,7 +10,8 @@
 
 body {
 
-    background: rgb(208, 250, 208) url(/img/main_background.jpg) fixed no-repeat center/100% 100%;
+
+    background: rgb(208, 250, 208) url(../img/main_background.jpg) fixed no-repeat center/100% 100%;
 
 }
 
@@ -23,6 +24,8 @@ ul {
 li {
     list-style: none;
 }
+
+
 
 a {
     display: block;
@@ -45,7 +48,7 @@ a {
     display: flex;
     width: 24px;
     height: 24px;
-    background: url(/img/popup-button.png) center no-repeat;
+    background: url(../img/popup-button.png) center no-repeat;
 }
 
 .popup-icon {
