@@ -9,7 +9,9 @@
 }
 
 body {
-    background: rgb(208, 250, 208) url(/img/Kottans^_^.jpg) no-repeat fixed center;
+
+    background: rgb(208, 250, 208) url(/img/main_background.jpg) fixed no-repeat center/100% 100%;
+
 }
 
 ul {
