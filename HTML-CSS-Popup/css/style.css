@@ -9,10 +9,7 @@
 }
 
 body {
-
-
     background: rgb(208, 250, 208) url(../img/main_background.jpg) fixed no-repeat center/100% 100%;
-
 }
 
 ul {
@@ -127,6 +124,7 @@ a {
     flex-wrap: nowrap;
     margin-left: -10px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .popup-icon:hover,
