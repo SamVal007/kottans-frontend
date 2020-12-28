@@ -75,7 +75,7 @@ Thanks a lot for such intrasting task and ALso for supporting and feedback.
 
 ![6.1 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_js_basics/introJsUdacity.jpg)
 
-### 2. Codeacademy JS
+### 2. FreeCodeCamp exercises
 
 ![6.2 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_js_basics/freeCodeCamp_JS.jpg)
 
