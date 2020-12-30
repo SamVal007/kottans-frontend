@@ -88,3 +88,8 @@ Thanks a lot for such intrasting task and ALso for supporting and feedback.
 ### 2. Freecodecamp Algorithm Scripting Challenges
 
 ![7.2 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_js_dom/freecodecampChallenges.jpg)
+
+### 3. JavaScript DOM -practice
+
+[demo](https://samval007.github.io/kottans-frontend/Task_DOM_SnookerPlayers/)
+[codebase](https://github.com/SamVal007/kottans-frontend/tree/main/Task_DOM_SnookerPlayers)
