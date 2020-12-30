@@ -97,6 +97,7 @@ const playerborn = document.querySelector('.born');
 const playerCurrentRanking = document.querySelector('.CurrentRanking');
 const playerCareerWinnings = document.querySelector('.CareerWinnings');
 const playerDescription = document.querySelector('.descr');
+const NAV = document.querySelector('nav');
 
 let currentCarIndex = "0";
 
@@ -116,16 +117,17 @@ const generateCarDescription = (id) => {
     div.appendChild(p);
   });
 
-  // PLAYERS[id].descr.forEach(item => {
-  //   const p = document.createElement('p');
-
-  //   p.textContent = item;
-  //   div.appendChild(p);
-  // });
-
 
   fragment.appendChild(div);
   return fragment.firstElementChild.innerHTML;
+}
+
+const displayContent = (activeElem) => {
+  playerPhoto.setAttribute('src', PLAYERS[activeElem.id].pic);
+  playerName.textContent = PLAYERS[activeElem.id].name;
+  playerborn.textContent = PLAYERS[activeElem.id].born;
+  playerCurrentRanking.textContent = PLAYERS[activeElem.id].CurrentRanking;
+  playerCareerWinnings.textContent = PLAYERS[activeElem.id].CareerWinnings;
 }
 
 const handler = ({
@@ -134,17 +136,13 @@ const handler = ({
   if (target.id === currentCarIndex) return;
   currentCarIndex = target.id;
 
+  displayContent(target);
+
   toggleActiveLink(target);
-  //display -content
-  // playerPhoto = document.querySelectorAll('.main img')
-  playerPhoto.setAttribute('src', PLAYERS[target.id].pic);
-  playerName.textContent = PLAYERS[target.id].name;
-  playerborn.textContent = PLAYERS[target.id].born;
-  playerCurrentRanking.textContent = PLAYERS[target.id].CurrentRanking;
-  playerCareerWinnings.textContent = PLAYERS[target.id].CareerWinnings;
+
   playerDescription.innerHTML = generateCarDescription(target.id);
 
   document.querySelector('#menuGamburger').checked = false;
 }
-//разбить на const NAV = document.querySelector('nav') a тут вызвать NAV.addEventListener("click", handler);
-document.querySelector('nav').addEventListener("click", handler);
+
+NAV.addEventListener("click", handler);

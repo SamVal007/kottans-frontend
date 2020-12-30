@@ -93,3 +93,8 @@ Thanks a lot for such intrasting task and ALso for supporting and feedback.
 
 [demo](https://samval007.github.io/kottans-frontend/Task_DOM_SnookerPlayers/)
 [codebase](https://github.com/SamVal007/kottans-frontend/tree/main/Task_DOM_SnookerPlayers)
+
+## Building a Tiny JS World
+
+[demo](https://samval007.github.io/a-tiny-JS-world/)
+[codebase](https://github.com/SamVal007/a-tiny-JS-world)
