@@ -109,14 +109,17 @@ Nice task to try "make" objects using only functions!
 
 ### 1. Object Oriented JS
 
-![8.1 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_js_dom/JSandDOM_udacity.jpg)
+![8.1 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/Object-Oriented%20JavaScript/udacity-1.jpg)
 
-![8.2 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_js_dom/JSandDOM_udacity.jpg)
+![8.2 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/Object-Oriented%20JavaScript/udacity-2.jpg)
 
+### 2. CodeWars
 
+![8.3 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/Object-Oriented%20JavaScript/CodeWars-1.jpg)
 
+![8.4 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/Object-Oriented%20JavaScript/CodeWars-2.jpg)
 
-
+### 3. Frogger game
 
 [demo](https://samval007.github.io/a-tiny-JS-world/)
 [codebase](https://github.com/SamVal007/a-tiny-JS-world)
