@@ -94,7 +94,13 @@ Thanks a lot for such intrasting task and ALso for supporting and feedback.
 [demo](https://samval007.github.io/kottans-frontend/Task_DOM_SnookerPlayers/)
 [codebase](https://github.com/SamVal007/kottans-frontend/tree/main/Task_DOM_SnookerPlayers)
 
+This one was may be the most interesting task for me!
+Finally I could try myself in something like this! And could use all experience what i took before in JS, CSS amd HTML!
+And it's cool when you have a page-load new info without server (or backend) !
+
 ## Building a Tiny JS World
 
 [demo](https://samval007.github.io/a-tiny-JS-world/)
 [codebase](https://github.com/SamVal007/a-tiny-JS-world)
+
+Nice task to try "make" objects using only functions!
