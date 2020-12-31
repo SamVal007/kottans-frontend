@@ -121,6 +121,6 @@ Nice task to try "make" objects using only functions!
 
 ### 3. Frogger game
 
-[demo](https://samval007.github.io/a-tiny-JS-world/)
-[codebase](https://github.com/SamVal007/a-tiny-JS-world)
+[demo](https://samval007.github.io/frontend-nanodegree-arcade-game/)
+[codebase](https://github.com/SamVal007/frontend-nanodegree-arcade-game)
 
