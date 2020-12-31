@@ -104,3 +104,20 @@ And it's cool when you have a page-load new info without server (or backend) !
 [codebase](https://github.com/SamVal007/a-tiny-JS-world)
 
 Nice task to try "make" objects using only functions!
+
+## Object-Oriented JavaScript
+
+### 1. Object Oriented JS
+
+![8.1 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_js_dom/JSandDOM_udacity.jpg)
+
+![8.2 Screenshot](https://github.com/SamVal007/kottans-frontend/blob/main/task_js_dom/JSandDOM_udacity.jpg)
+
+
+
+
+
+
+[demo](https://samval007.github.io/a-tiny-JS-world/)
+[codebase](https://github.com/SamVal007/a-tiny-JS-world)
+
