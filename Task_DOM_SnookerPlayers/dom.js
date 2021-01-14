@@ -1,5 +1,3 @@
-const nav = document.querySelector('nav');
-
 const PLAYERS = [{
     name: "Ronnie O'Sullivan",
     born: "5 December 1975 (age 45) Wordsley, West Midlands, England",
@@ -99,6 +97,7 @@ const playerBorn = document.querySelector('.born');
 const playerCurrentRanking = document.querySelector('.current-ranking');
 const playerCareerWinnings = document.querySelector('.career-winnings');
 const playerDescription = document.querySelector('.description');
+const menuContainer = document.querySelector('nav');
 
 
 let currentPlayerIndex = 0;
@@ -133,9 +132,8 @@ const displayContent = (activeElem) => {
 }
 
 
-const displayMain = ({
-  target
-}) => {
+const displayMain = ({target}) => {
+
   if (target.id === currentPlayerIndex) return;
   currentPlayerIndex = target.id;
 
@@ -148,4 +146,4 @@ const displayMain = ({
   document.querySelector('#menuGamburger').checked = false;
 }
 
-nav.addEventListener("click", displayMain);
+menuContainer.addEventListener("click", displayMain);
