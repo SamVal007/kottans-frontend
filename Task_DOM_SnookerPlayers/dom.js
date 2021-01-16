@@ -109,7 +109,6 @@ const toggleActiveLink = (newActiveEl) => {
 
 const generatePlayerDescription = (id) => {
   const fragment = document.createDocumentFragment();
-  const div = document.createElement('div');
 
   PLAYERS[id].description.forEach(item => {
     const p = document.createElement('p');
@@ -117,10 +116,8 @@ const generatePlayerDescription = (id) => {
     fragment.appendChild(p);
   });
 
-
-  div.appendChild(fragment);
-  return div.innerHTML;
-}
+  return fragment;
+};
 
 const displayContent = (activeElem) => {
   const data = PLAYERS[activeElem.id];
@@ -129,8 +126,7 @@ const displayContent = (activeElem) => {
   playerBorn.textContent = data.born;
   playerCurrentRanking.textContent = data.currentRanking;
   playerCareerWinnings.textContent = data.careerWinnings;
-}
-
+};
 
 const displayMain = ({target}) => {
 
@@ -141,9 +137,11 @@ const displayMain = ({target}) => {
 
   toggleActiveLink(target);
 
-  playerDescription.innerHTML = generatePlayerDescription(target.id);
+  playerDescription.innerHTML = '';
+  playerDescription.appendChild(generatePlayerDescription(target.id));
 
   document.querySelector('#menuGamburger').checked = false;
-}
+
+};
 
 menuContainer.addEventListener("click", displayMain);
