@@ -4,8 +4,6 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
   background-size: contain;
   background: url("img/fon.gif");
 
@@ -38,15 +36,6 @@ body:before {
   padding: 2%;
 }
 
-.header {
-  text-align: center;
-}
-
-h1,
-h3 {
-  color: #fff;
-  font-family: 'Monoton', cursive;
-}
 
 .game,
 .front_card,
