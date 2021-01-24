@@ -132,3 +132,4 @@ window.onload = () => {
         showCards();
     } else window.close();
 };
+
