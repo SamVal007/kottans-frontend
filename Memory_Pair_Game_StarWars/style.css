@@ -8,7 +8,6 @@ body {
   font-size: 18px;
   background-size: contain;
   background: url("img/fon.gif");
-  overflow: hidden;
 }
 
 body:before {
@@ -30,11 +29,12 @@ body:before {
 .container {
   display: flex;
   flex-direction: column;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  max-width: 98vw;
-  height: 98vh;
-  padding: 1%;
+  max-width: 94vw;
+  height: 94vh;
+  padding: 3%;
 }
 
 .header {
@@ -58,8 +58,8 @@ h3 {
 
 .card {
   position: relative;
-  width: 7vw;
-  height: 27vh;
+  width: 11vh;
+  height: 29vh;
   margin: 0.3em;
   border: 3px solid rgb(192, 146, 28);
   border-radius: 5px;
