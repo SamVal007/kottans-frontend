@@ -32,9 +32,9 @@ body:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 90vw;
-  height: 90vh;
-  padding: 5%;
+  max-width: 98vw;
+  height: 98vh;
+  padding: 1%;
 }
 
 .header {
@@ -59,7 +59,7 @@ h3 {
 .card {
   position: relative;
   width: 7vw;
-  height: 23vh;
+  height: 27vh;
   margin: 0.3em;
   border: 3px solid rgb(192, 146, 28);
   border-radius: 5px;
