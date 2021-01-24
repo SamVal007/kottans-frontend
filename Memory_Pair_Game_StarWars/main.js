@@ -1,8 +1,8 @@
 let similarCards = [];
 let blockedClick = false;
-const images = ['Dart_Weider', 'Han_Solo', 'lyuk-skajuoker', 'R2-D2', 'c-3po',
+const images = ['Dart_Weider', 'lyuk-skajuoker', 'R2-D2', 'c-3po',
                 'printsessa-leya-organa', 'enakin-skajuoker', 'obi-van-kenobi',
-                 'dart-sidius', 'kvaj-gon-dzhinn', 'joda'];
+                 'dart-sidius', 'kvaj-gon-dzhinn'];
 
 const mainAttributes = {
     container: 'container',
