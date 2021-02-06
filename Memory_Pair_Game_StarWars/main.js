@@ -16,7 +16,7 @@ const mainAttributes = {
     hidden: 'hidden'
 };
 
-const cleanCountArray = () => similarCards = [];
+const cleanCountArray = () => similarCards = []; //similarCards.length = 0;
 
 const flippSelectedCards = () => {
     setTimeout(() => {
@@ -36,8 +36,12 @@ const hideSimilarCards = () => {
             blockedClick = false;
             const counterHiddenCards = document.querySelectorAll(".hidden").length;
             const amountOfCards = (images.length * 2);
-            console.log(amountOfCards);
-            if (counterHiddenCards == amountOfCards) {
+            // console.log(amountOfCards);
+            // console.log(typeof(amountOfCards));
+            // console.log(counterHiddenCards);
+            // console.log(typeof(counterHiddenCards));
+
+            if (counterHiddenCards === amountOfCards) {
                 victoryMessage();
             }
         });
@@ -56,9 +60,7 @@ const compareSimilarCards = () => {
     }
 };
 
-const selectCard = ({
-    target
-}) => {
+const selectCard = ({target}) => {
     if (!blockedClick) {
         const selectedCard = target.closest('.card');
         if (selectedCard && !selectedCard.classList.contains('flipped')) {
