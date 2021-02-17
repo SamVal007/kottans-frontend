@@ -1,5 +1,5 @@
 const CONTAINER = document.getElementById('container');
-const SIDEBAR = document.getElementById('sidebar');
+const SIDEBAR = document.getElementById('menu_forms');
 const SEARCH_FIELD = document.getElementById('searchField');
 const URL = 'https://randomuser.me/api/?results=40';
 
