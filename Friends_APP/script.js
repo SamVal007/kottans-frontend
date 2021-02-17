@@ -1,5 +1,5 @@
 const CONTAINER = document.getElementById('container');
-const SIDEBAR = document.getElementById('sidebar');
+const SIDEBAR = document.getElementById('menu_forms');
 const SEARCH_FIELD = document.getElementById('searchField');
 const URL = 'https://randomuser.me/api/?results=40';
 
@@ -8,12 +8,7 @@ let displayList = [];
 
 function getPeopleData() {
   let response = fetch(URL)
-    // .then(response => {
-    //   if (!response.ok) {
-    //     throw new Error('Network response was not ok');
-    //   }
-    //   return response;
-    // })
+
     .then(
       successResponse => {
         if (successResponse.status != 200) {
