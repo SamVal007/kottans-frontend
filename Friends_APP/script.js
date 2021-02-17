@@ -8,15 +8,31 @@ let displayList = [];
 
 function getPeopleData() {
   let response = fetch(URL)
-                  .then(data => data.json())
-                  .then(function(data){
-                    persons = data.results;
-                    displayList = persons;
-                    displayCards();
-                  })
-                  .catch(function(error){
-                    console.log('We have an error: ', error);
-                  })
+    // .then(response => {
+    //   if (!response.ok) {
+    //     throw new Error('Network response was not ok');
+    //   }
+    //   return response;
+    // })
+    .then(
+      successResponse => {
+        if (successResponse.status != 200) {
+          return null;
+        } else {
+          return successResponse;
+        }
+      }
+    )
+    .then(data => data.json())
+    .then(function (data) {
+      persons = data.results;
+      displayList = persons;
+      displayCards();
+    })
+    .catch(function (error) {
+      console.log('We have an error: ', error);
+      alert('Please, check your internet connection and try again');
+    })
 }
 
 function getTemplate(person) {
@@ -39,28 +55,28 @@ function displayCards() {
   CONTAINER.innerHTML = '';
   let cardMarkup = '';
   cardMarkup += displayList.reduce((accumulator, currentValue) => accumulator.concat(getTemplate(currentValue)), '');
-  CONTAINER.insertAdjacentHTML('afterbegin',cardMarkup);
+  CONTAINER.insertAdjacentHTML('afterbegin', cardMarkup);
 }
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
   getPeopleData();
 
-  SIDEBAR.addEventListener('click', function(event){
+  SIDEBAR.addEventListener('click', function (event) {
     let radio = event.target.closest('.rdBtn');
-    console.log(radio);
     let btn = event.target.closest('button');
-    console.log(btn);
 
-    if(radio){
-      switch(radio.id){
+    if (radio) {
+      //console.log(radio);
+
+      switch (radio.id) {
         case 'genderAll':
           displayList = persons;
           break;
         case 'genderMale':
-          displayList = persons.filter( el => el.gender == 'male' );
+          displayList = persons.filter(el => el.gender === 'male');
           break;
         case 'genderFemale':
-          displayList = persons.filter( el => el.gender == 'female' );
+          displayList = persons.filter(el => el.gender === 'female');
           break;
         case 'nameAsc':
           displayList = displayList.sort((b, a) => a.name.last > b.name.last ? -1 : 1);
@@ -75,19 +91,19 @@ document.addEventListener('DOMContentLoaded', function(){
           displayList = displayList.sort((b, a) => a.dob.age - b.dob.age);
           break;
       }
-    }
-    else if(btn){
+
+    } else if (btn) {
       displayList = persons;
     }
     displayCards();
   })
 
-  SEARCH_FIELD.addEventListener('input', function(event){
+  SEARCH_FIELD.addEventListener('input', function (e) {
     let searchStr = '';
-    searchStr = SEARCH_FIELD.value.trim();
-    displayList = persons.filter(el => el.name.last.includes(searchStr));
+    searchStr = SEARCH_FIELD.value.toLowerCase().trim();
+    //console.log(searchStr);
+    displayList = persons.filter(elem => elem.name.last.toLowerCase().includes(searchStr));
+    //console.log(displayList);
     displayCards();
   })
 });
-
-

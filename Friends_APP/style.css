@@ -33,7 +33,7 @@ h6 {
   flex-wrap: wrap;
 }
 
-#sidebar {
+#menu_forms {
   /* width: 250px; */
   margin: 20px 0 0 20px;
 }
@@ -41,17 +41,19 @@ h6 {
 .form {
   display: flex;
   flex-wrap: wrap;
-
-  justify-content: left;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .form_section {
   display: inherit;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   margin: 22px;
-
-
+}
+.section_name{
+  margin-top: 10px;
 }
 
 #container {
@@ -134,13 +136,13 @@ a:hover {
 }
 
 .form_section {
-  padding: 10px;
+  padding: 0px;
 }
 
 .form_section span {
   display: block;
   font-weight: 600;
-  padding: 5px;
+  padding: 4px;
   font-size: 16px;
 }
 
@@ -160,7 +162,7 @@ a:hover {
 .resetButton {
   width: 180px;
   height: 30px;
-  margin-top: 28px;
+  margin-top: -15px;
   padding: 2px;
   background: #696969;
   color: #ffffff;
