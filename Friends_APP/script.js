@@ -16,14 +16,19 @@ function getPeopleData() {
         } else {
           return successResponse;
         }
-      }
-    )
+      })
+
     .then(data => data.json())
+
     .then(function (data) {
       persons = data.results;
       displayList = persons;
+    })
+
+    .then(function () {
       displayCards();
     })
+
     .catch(function (error) {
       console.log('We have an error: ', error);
       alert('Please, check your internet connection and try again');
@@ -61,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let btn = event.target.closest('button');
 
     if (radio) {
-      //console.log(radio);
 
       switch (radio.id) {
         case 'genderAll':
@@ -74,16 +78,16 @@ document.addEventListener('DOMContentLoaded', function () {
           displayList = persons.filter(el => el.gender === 'female');
           break;
         case 'nameAsc':
-          displayList = displayList.sort((b, a) => a.name.last > b.name.last ? -1 : 1);
+          displayList.sort((b, a) => a.name.last > b.name.last ? -1 : 1);
           break;
         case 'nameDesc':
-          displayList = displayList.sort((b, a) => a.name.last < b.name.last ? -1 : 1);
+          displayList.sort((b, a) => a.name.last < b.name.last ? -1 : 1);
           break;
         case 'ageLow':
-          displayList = displayList.sort((a, b) => a.dob.age - b.dob.age);
+          displayList.sort((a, b) => a.dob.age - b.dob.age);
           break;
         case 'ageHigh':
-          displayList = displayList.sort((b, a) => a.dob.age - b.dob.age);
+          displayList.sort((b, a) => a.dob.age - b.dob.age);
           break;
       }
 
@@ -96,9 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
   SEARCH_FIELD.addEventListener('input', function (e) {
     let searchStr = '';
     searchStr = SEARCH_FIELD.value.toLowerCase().trim();
-    //console.log(searchStr);
     displayList = persons.filter(elem => elem.name.last.toLowerCase().includes(searchStr));
-    //console.log(displayList);
     displayCards();
   })
 });
