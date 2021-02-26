@@ -25,8 +25,6 @@ const mainAttributes = {
     imgFrontLogoUrl: 'img/'
 };
 
-const cleanCountArray = () => similarCards = [];
-
 const flippSelectedCards = () => {
     setTimeout(() => {
         document.querySelectorAll(".flipped").forEach((card) => {
@@ -43,11 +41,14 @@ const hideCards = () => {
     });
 };
 
+const cleanCountArray = () => similarCards = [];
+
+const cleaningCountArrayAndUnblockClick = () => {
+    cleanCountArray();
+    blockedClick = false;
+};
+
 const compareSimilarCards = () => {
-    const cleaningCountArrayAndUnblockClick = () => {
-        cleanCountArray();
-        blockedClick = false;
-    };
     const countCards = similarCards.length;
     if (countCards === enoughCountOfSimilarCards) {
         blockedClick = true;
@@ -76,15 +77,12 @@ const selectCard = ({target}) => {
 };
 
 const drawCards = () => {
-
     const cards = document.createElement('div');
     cards.classList.add(mainAttributes.cards);
-
     const arrImages = [...images, ...images];
     const shuffleArray = arrImages.sort(function () {
         return 0.5 - Math.random();
     });
-
 
     const backImgSrc = mainAttributes.imgBackLogoUrl;
     const backImgAlt = mainAttributes.imgBackLogoAlt;
