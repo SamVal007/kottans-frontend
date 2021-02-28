@@ -28,7 +28,7 @@ h6 {
 }
 
 #wrapper {
-  display: flex;
+  /* display: flex; */
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -42,7 +42,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .form_section {
